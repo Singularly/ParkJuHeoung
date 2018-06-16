@@ -1,0 +1,17 @@
+<html>
+<body>
+<script>
+var count, sum=0 , aver, array=[];
+document.write("배열값 : ")
+for(count=1 ; count<=7; count++){
+  array[count]=parseInt(prompt("배열값을 입력"));
+  sum=sum+array[count];
+  document.write(array[count]+ " ");
+}
+document.write("<BR>");
+document.write("총점 : " + sum);
+document.write("<BR>");
+document.write("평균 : " + sum/count);
+</script>
+</body>
+</html>
