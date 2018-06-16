@@ -1,0 +1,18 @@
+<html>
+<body>
+<script>
+var count , sum=0, sum2 , aver;
+var number=[234,44,89,678,55,785,66,88];
+var max = Math.max.apply(null, number);
+var min = Math.min.apply(null, number);
+for(count=0 ; count<=7 ; count++)
+{
+  sum= sum + number[count];
+}
+sum2 = sum -max - min;
+aver = (sum-max-min)/6;
+document.write("가장 큰 값과 작은 값을 제외한 합 : " + sum2);
+document.write("<BR>" + "가장 작은 값 : " + aver);
+</script>
+</body>
+</html>
