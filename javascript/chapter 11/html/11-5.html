@@ -1,0 +1,27 @@
+<html>
+<body>
+    <script>
+        var num = [33, 2, 189, 72, 7, 91, 5, 14, 17, 9];
+        var i, j, temp;
+        temp = num[0];
+
+        document.write("초기 배열 값 : ");
+        for(i = 0; i <=9; i++)
+        {
+            document.write(num[i] + " ");
+        }
+
+        for(i = 0; i <=9; i++)
+        {
+            num[i - 1] = num[i];
+        }
+        num[9] = temp;
+
+        document.write("<BR>이동 후 배열 값 : ")
+        for(i = 0; i <=9; i++)
+        {
+            document.write(num[i] + " ");
+        }
+        </script>
+</body>
+</html>

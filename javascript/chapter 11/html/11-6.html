@@ -1,0 +1,16 @@
+<html>
+<body>
+<script>
+ var i;
+       var number = [ 133, 22, 189, 72, 778, 91, 125, 142, 173, 94 ];
+     document.write("정렬전 : ");
+     for(i=0; i<=9 ; i++){
+       document.write(number[i] + " ");
+     }
+     number.sort(function(a, b){
+     return b - a;
+   });
+      document.write("<BR> 정렬후 : " + number);
+</script>
+</body>
+</html>
