@@ -1,0 +1,23 @@
+<html>
+ <body>
+ <script>
+ var num, i, j, k;
+ num=prompt("숫자를 입력");
+ for(i=2; i<=num; i++)
+ {
+  j=0;
+  for(k=1; k<=i; k++)
+  {
+   if(i%k==0)
+   {
+    j++;
+   }
+  }
+  if(j==2)
+  {
+   document.write(i+" ");
+  }
+ }
+ </script>
+ </body>
+</html>

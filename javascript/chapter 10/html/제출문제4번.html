@@ -1,0 +1,19 @@
+﻿<html>
+<body>
+<script>
+	var count,a,b,c,sum,aver;
+	for(count=0; (a!=0 && b!=0 && c!=0);){
+		a=parseInt(prompt("첫 과목의 점수를 입력하세요 <BR> 세과목의 점수가 모두 0점일경우 종류합니다"));
+		b=parseInt(prompt("두번째 과목의 점수를 입력하세요"));
+		c=parseInt(prompt("세번째 과목의 점수를 입력하세요"));
+		if(!(a==0&&b==0&&c==0)){
+		sum=a+b+c;
+		aver=sum/3;
+		count++;
+		document.write(count+ "번학생 = 총점 : " +sum + "평균" + aver + "<br>");
+	}
+	}
+	document.write("총 "+(count)+"명을 성적 처리하였습니다.");
+</script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+      var num , count , sum=0;
+      num = parseInt(prompt("하나의 숫자를 입력하세요"));
+      for(count=1 ; count<=num ; count++)
+      {
+          sum=sum+count;
+
+          if(count%10==0)
+          {
+              document.write("1-"+ count +" : "+sum+"<br>");
+          }
+      }
+          if(num%10!=0)
+          {
+              document.write("1-"+num+" : "  + +sum+"<BR>");
+          }      
+        </script>
+    </body>
+</html>
